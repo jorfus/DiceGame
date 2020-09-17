@@ -24,6 +24,7 @@ namespace DiceGame
                     Console.Write($"{randInt} ");
 
                 Console.ReadKey();
+                Console.Clear();
             }
         }
     }
