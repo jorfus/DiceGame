@@ -26,6 +26,7 @@ namespace DiceGame
                         case 1:
                         case 3:
                         case 5:
+                        case 7:
                             Console.Write(' ');
                             break;
                         case 2:
@@ -37,6 +38,46 @@ namespace DiceGame
                                 case 2:
                                 case 3:
                                     Console.Write("|  o| ");
+                                    break;
+                                case 4:
+                                case 5:
+                                case 6:
+                                    Console.Write("|o o| ");
+                                    break;
+                                default:
+                                    break;
+                            }
+                            column += 5;
+                            break;
+                        case 4:
+                            switch (randInts[column / 6])
+                            {
+                                case 1:
+                                case 3:
+                                case 5:
+                                    Console.Write("| o | ");
+                                    break;
+                                case 2:
+                                case 4:
+                                    Console.Write("|   | ");
+                                    break;
+                                case 6:
+                                    Console.Write("|o o| ");
+                                    break;
+                                default:
+                                    break;
+                            }
+                            column += 5;
+                            break;
+                        case 6:
+                            switch (randInts[column / 6])
+                            {
+                                case 1:
+                                    Console.Write("|   | ");
+                                    break;
+                                case 2:
+                                case 3:
+                                    Console.Write("|o  | ");
                                     break;
                                 case 4:
                                 case 5:
